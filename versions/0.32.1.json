@@ -1,0 +1,21 @@
+{
+  "version": "0.32.1",
+  "platforms": {
+    "aarch64-linux": {
+      "url": "https://github.com/sfcompute/cli/releases/download/0.32.1/sf-node22-linux-arm64.zip",
+      "hash": "sha256-hCoFPHK68jvyUAwwyiU38nuYxCf+3Sj5jaFeCHDalMY="
+    },
+    "x86_64-linux": {
+      "url": "https://github.com/sfcompute/cli/releases/download/0.32.1/sf-node22-linux-x64.zip",
+      "hash": "sha256-ZPYgdp2hqauDHRs42UXjzHvyzzzqVsfJwYoGhOsb+/4="
+    },
+    "x86_64-darwin": {
+      "url": "https://github.com/sfcompute/cli/releases/download/0.32.1/sf-node22-macos-x64.zip",
+      "hash": "sha256-+IiUv0AtiuYx4ZOIgXRxTL6odPKlxx2S/WCfDadVl2Q="
+    },
+    "aarch64-darwin": {
+      "url": "https://github.com/sfcompute/cli/releases/download/0.32.1/sf-node22-macos-arm64.zip",
+      "hash": "sha256-sF6zo6+b9MNBKl/FAJCqEXr28HYlYhNg11bgu+6V4jQ="
+    }
+  }
+}

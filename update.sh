@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-LATEST=$(curl -sSf "https://api.github.com/repos/sfcompute/cli/releases/latest" | jq -r .tag_name)
+LATEST=$(curl -sSf -o /dev/null -w '%{redirect_url}' "https://github.com/sfcompute/cli/releases/latest")
+LATEST=${LATEST##*/}
+[ -n "$LATEST" ] || { echo "Could not resolve the latest sfcompute/cli release" >&2; exit 1; }
 
 if [ -f "versions/${LATEST}.json" ]; then
   echo "Already tracked: ${LATEST}"
